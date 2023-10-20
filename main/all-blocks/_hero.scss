@@ -1,0 +1,229 @@
+.hero {
+    margin-top: 100px;
+    width: 100%;
+
+    .container {
+        display: flex;
+        align-items: center;
+        gap: 200px;
+
+
+    }
+
+    .hero__bac {
+        background: url(../image/herobac.png) no-repeat;
+        background-size: cover;
+        max-width: 780px;
+        height: 780px;
+        position: absolute;
+        z-index: -1;
+        margin-left: 550px;
+        width: 100%;
+    }
+
+    &__title {
+        max-width: 546px;
+        color: #36536B;
+        font-family: "DM Serif Display";
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 72px;
+        letter-spacing: -0.554px;
+        width: 100%;
+    }
+
+    .input__email {
+        width: 445px;
+        height: 48px;
+        border: none;
+        text-align: left;
+        padding-left: 20px;
+        border-radius: 24px;
+        background: #FBFCFE;
+        box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    }
+
+    .hero__btn {
+        color: #FBFCFE;
+        font-family: "Public Sans";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.115px;
+        text-align: center;
+        border: none;
+        padding: 18px 24px;
+        border-radius: 24px;
+        background: #BA4270;
+        position: relative;
+        margin-left: -80px;
+
+        &:hover {
+            background-color: #DA6D97;
+        }
+
+        &:focus {
+            background-color: #c77494;
+        }
+    }
+
+    .info__title {
+        color: #6C8294;
+        font-family: " Public Sans";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .title__link {
+        color: #6C8294;
+        font-family: "Public Sans";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-decoration-line: underline;
+        transition: all 0.9s ease;
+
+        &:hover {
+            color: black;
+            text-decoration: overline;
+        }
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+
+    .hero__bac {
+        background: url(../image/herobac2x.png) no-repeat;
+        background-size: cover;
+        width: 780px;
+        height: 780px;
+        position: absolute;
+        z-index: -1;
+        margin-left: 550px;
+    }
+}
+
+@media only screen and (max-width:1040px) {
+    .hero__bac {
+        display: none;
+
+    }
+
+    .hero .container {
+        flex-direction: column;
+        order: calc(-1);
+
+    }
+
+    .hero__info {
+        display: block;
+    }
+
+    .hero__title {
+        color: #36536B;
+        text-align: center;
+        font-family: " DM Serif Display";
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 56px;
+        letter-spacing: -0.369px;
+    }
+
+    .input__email {
+        width: 445px;
+        height: 48px;
+        border-radius: 24px;
+        background: #FBFCFE;
+        box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    }
+
+    .info__title {
+        width: 573px;
+        color: #6C8294;
+        font-family: " Public Sans";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .title__link {
+        color: #6C8294;
+        font-family: "Public Sans";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-decoration-line: underline;
+    }
+}
+
+@media only screen and (max-width:668px) {
+    .hero__title {
+        max-width: 357px;
+        color: #36536B;
+        text-align: center;
+        width: 100%;
+        font-family: " DM Serif Display";
+        font-size: 32px;
+        margin-left: 100px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: -0.246px;
+    }
+
+    .input__email {
+        display: block;
+        width: 327px;
+        height: 48px;
+        border-radius: 24px;
+        background: #FBFCFE;
+        box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    }
+
+    .hero__btn {
+        padding: 16px 50px;
+        color: #FBFCFE;
+        position: relative;
+        text-align: center;
+        font-family: "Public Sans";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-right: -500px;
+        letter-spacing: -0.115px;
+    }
+
+    .info__title {
+        color: #6C8294;
+        font-family: " Public Sans";
+        font-size: 15px;
+        text-align: center;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .title__link {
+        color: #6C8294;
+        font-family:" Public Sans";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-decoration-line: underline;
+    }
+}

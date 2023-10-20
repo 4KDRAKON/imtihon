@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__go">
+                <a class="link" href="#">
+                    <img class="header__logo" src="./image/Group21.svg" alt="logo" width="135" height="38">
+                    <img class="header__mobi" src="./image/Group21(1).svg" alt="logo" width="135" height="38">
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#"> About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Contact</a>
+                        </li>
+
+
+                    </ul>
+                </nav>
+            </div>
+            <button class="btn__ikki">Schedule a Demo</button>
+
+
+            <button class="btn" type="submit">
+                <img class="btn__menu" src="./image/Group.svg" alt="logo" width="28" height="17">
+                <img class="btn__exi" src="./image/Group(1).svg" alt="logo" width="22" height="23">
+
+            </button>
+
+        </div>
+    </header>
+
+
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__bac"></div>
+                <div class="hero__info">
+                    <h1 class="hero__title">Start building with our APIs for absolutely free.</h1>
+                    <form class="form" action="https://echo.htmlacademy.ru">
+                        <input class="input__email" type="email" placeholder="Enter email address" required>
+                        <button class="hero__btn" type="submit">Schedule a Demo</button>
+                    </form>
+                    <h2 class="info__title">Have any questions? <a class="title__link" href="#">Contact Us</a></h2>
+                </div>
+
+                <picture>
+                    <!-- <source 
+                    media="(max-width:425px)"
+                    type="image/webp"
+                    src="./image/ 1x, ./img/Cofe-mobil@2x.webp 2x"
+                    > -->
+
+                    <source media="(max-width:1040px)" type="image/webp"
+                        srcset="./image/tablet.webp 1x, ./image/tablet2x.webp 2x">
+
+                    <source type="image/webp" src="./image/Group30-1.webp 1x, ./image/Group30.webp 2x">
+
+                    <img class="hero__img" src="./image/Group30-1.png"
+                        srcset="./image/Group30-1.png 1x, ./image/Group30.png 2x" alt="oypan" width="263" height="500">
+                </picture>
+
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <div class="about__texts">
+                    <h3 class="about__heading">Who we work with</h3>
+                    <p class="about__text">
+                        Today, millions of people around the world have successfully connected their accounts to apps
+                        they love using our API. We provide developers with the tools they need to create easy and
+                        accessible experiences for their users.
+                    </p>
+                    <button class="about__button">About Us</button>
+                </div>
+                <div class="about__flex">
+                    <img src="./image/tesla.svg" alt="about__img" class="about__img">
+                    <img src="./image/mc.svg" alt="about__img" class="about__img">
+                    <img src="./image/hewletti.svg" alt="about__img" class="about__img">
+                    <img src="./image/oracle.svg" alt="about__img" class="about__img">
+                    <img src="./image/google.svg" alt="about__img" class="about__img">
+                    <img src="./image/nvidia.svg" alt="about__img" class="about__img">
+                </div>
+            </div>
+        </section>
+
+        <section class="easy">
+            <div class="container">
+                <picture>
+                    <source 
+                    media="(max-width:425px)"
+                    type="image/webp"
+                    src="./image/easymobi1x.webp 1x, ./image/easymobi2x.webp 2x"
+                    >
+
+                    <source media="(max-width:1040px)" type="image/webp"
+                        src="./image/easytablet1x.webp 1x, ./image/easytablet2x.webp 2x">
+
+                    <source type="image/webp" srcset="./image/easydesk1x.webp 1x, ./image/easydesk2x.webp 2x">
+
+                    <img class="easy__img" src="./image/easydesk1x.png"
+                        srcset="./image/easydesk1x.png 1x, ./image/easydesk2x.png 2x" alt="oypan"
+                         width="445" 
+                         height="284">
+                </picture>
+
+
+                <div class="easy__info">
+                    <h2 class="easy__info__title">Easy to implement</h2>
+                    <p class="easy__info__text">Our API comes with just a few lines of code. You’ll be up and running in
+                        no time. We built our documentation page to integrate payments functionality with ease.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
